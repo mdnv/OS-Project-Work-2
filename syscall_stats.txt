@@ -1,0 +1,3 @@
+Python system call statistics
+Total system calls: 778
+Read-related calls: 76

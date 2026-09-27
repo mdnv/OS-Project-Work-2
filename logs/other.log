@@ -1,0 +1,4 @@
+2026-09-27 11:00:00 ERROR auth: Token expired
+2026-09-27 11:01:00 WARN database: High latency
+2026-09-27 11:02:00 ERROR payment: Transaction rejected
+2026-09-27 11:03:00 ERROR auth: Invalid token

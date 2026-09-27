@@ -1,0 +1,2 @@
+Hello from Ubuntu!
+This is a test file for system calls.

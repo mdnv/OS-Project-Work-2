@@ -1,0 +1,48 @@
+8181  execve("/usr/bin/cat", ["cat", "data/sample.txt"], 0xffffe7830db0 /* 25 vars */) = 0
+8181  brk(NULL)                         = 0xc160bd1d2000
+8181  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf4bb6a3e0000
+8181  faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+8181  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+8181  fstat(3, {st_mode=S_IFREG|0644, st_size=23923, ...}) = 0
+8181  mmap(NULL, 23923, PROT_READ, MAP_PRIVATE, 3, 0) = 0xf4bb6a3da000
+8181  close(3)                          = 0
+8181  openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+8181  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0"..., 832) = 832
+8181  fstat(3, {st_mode=S_IFREG|0755, st_size=1722920, ...}) = 0
+8181  mmap(NULL, 1892240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf4bb6a1d9000
+8181  mmap(0xf4bb6a1e0000, 1826704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xf4bb6a1e0000
+8181  munmap(0xf4bb6a1d9000, 28672)     = 0
+8181  munmap(0xf4bb6a39e000, 36752)     = 0
+8181  mprotect(0xf4bb6a37a000, 77824, PROT_NONE) = 0
+8181  mmap(0xf4bb6a38d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0xf4bb6a38d000
+8181  mmap(0xf4bb6a392000, 49040, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf4bb6a392000
+8181  close(3)                          = 0
+8181  set_tid_address(0xf4bb6a3e0ff0)   = 8181
+8181  set_robust_list(0xf4bb6a3e1000, 24) = 0
+8181  rseq(0xf4bb6a3e1640, 0x20, 0, 0xd428bc00) = 0
+8181  mprotect(0xf4bb6a38d000, 12288, PROT_READ) = 0
+8181  mprotect(0xc160b75ef000, 4096, PROT_READ) = 0
+8181  mprotect(0xf4bb6a3e5000, 8192, PROT_READ) = 0
+8181  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+8181  munmap(0xf4bb6a3da000, 23923)     = 0
+8181  getrandom("\x42\x58\x6a\xdf\x5e\x3f\x09\x7c", 8, GRND_NONBLOCK) = 8
+8181  brk(NULL)                         = 0xc160bd1d2000
+8181  brk(0xc160bd1f3000)               = 0xc160bd1f3000
+8181  openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+8181  fstat(3, {st_mode=S_IFREG|0644, st_size=3055776, ...}) = 0
+8181  mmap(NULL, 3055776, PROT_READ, MAP_PRIVATE, 3, 0) = 0xf4bb69e00000
+8181  close(3)                          = 0
+8181  fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+8181  openat(AT_FDCWD, "data/sample.txt", O_RDONLY) = 3
+8181  fstat(3, {st_mode=S_IFREG|0664, st_size=57, ...}) = 0
+8181  fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+8181  mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf4bb6a1be000
+8181  read(3, "Hello from Ubuntu!\nThis is a tes"..., 131072) = 57
+8181  write(1, "Hello from Ubuntu!\nThis is a tes"..., 57) = 57
+8181  read(3, "", 131072)               = 0
+8181  munmap(0xf4bb6a1be000, 139264)    = 0
+8181  close(3)                          = 0
+8181  close(1)                          = 0
+8181  close(2)                          = 0
+8181  exit_group(0)                     = ?
+8181  +++ exited with 0 +++
